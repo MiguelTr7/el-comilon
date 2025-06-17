@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedido - El Comilón</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between h-16">
+        <div class="flex">
+          <a href="Index.html" class="flex-shrink-0 flex items-center space-x-2">
+            <img src="img/6980356c-632c-4914-a508-31ef9ce27319.png" alt="Logo El Comilón" class="h-10 w-auto">
+            <span class="text-2xl font-extrabold text-yellow-600">El Comilón</span>
+          </a>
+          <div class="hidden md:ml-8 md:flex md:space-x-6 md:items-center">
+            <a href="catalogo.html" class="text-gray-700 hover:text-yellow-600">Platos</a>
+            <a href="restaurantes.html" class="text-gray-700 hover:text-yellow-600">Convenios</a>
+            <a href="pedido.html" class="text-gray-700 hover:text-yellow-600">Haz tu pedido</a>
+            <a href="delivery.html" class="text-gray-700 hover:text-yellow-600">Entrega a domicilio</a>
+            <a href="contacto.html" class="text-gray-700 hover:text-yellow-600">Contacto</a>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <button onclick="location.href='inicioSesion.html'" class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg">Inicia Sesión</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección de pedido -->
+  <section class="py-16">
+    <div class="max-w-3xl mx-auto px-4">
+      <h1 class="text-4xl font-bold text-gray-800 text-center mb-10">Realizar Pedido</h1>
+      
+      <form class="bg-white p-6 rounded-lg shadow-lg space-y-6">
+        <!-- Datos del cliente -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Nombre del Cliente</label>
+          <input type="text" placeholder="Tu nombre" class="w-full border px-4 py-2 rounded-md focus:ring-2 focus:ring-yellow-500" required>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Dirección de Entrega</label>
+          <input type="text" placeholder="Dirección completa" class="w-full border px-4 py-2 rounded-md focus:ring-2 focus:ring-yellow-500" required>
+        </div>
+
+        <!-- Selección de platos -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Selecciona tus platos</label>
+          <select multiple class="w-full border px-4 py-2 rounded-md focus:ring-2 focus:ring-yellow-500 h-40">
+            <option>Empanadas de pino</option>
+            <option>Porotos con rienda</option>
+            <option>Pastel de choclo</option>
+            <option>Charquicán</option>
+            <option>Cazuela de vacuno</option>
+            <option>Ensalada chilena</option>
+            <option>Arroz con pollo</option>
+            <option>Pantrucas</option>
+          </select>
+          <p class="text-sm text-gray-500 mt-1">Mantén presionado Ctrl (o Cmd en Mac) para seleccionar varios platos.</p>
+        </div>
+
+        <!-- Método de pago -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Método de Pago</label>
+          <select class="w-full border px-4 py-2 rounded-md focus:ring-2 focus:ring-yellow-500">
+            <option>Transferencia</option>
+            <option>Tarjeta de débito</option>
+            <option>Tarjeta de crédito</option>
+            <option>Pago contra entrega</option>
+          </select>
+        </div>
+
+        <!-- Botón de enviar -->
+        <div class="text-center pt-4">
+          <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg font-semibold">Confirmar Pedido</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400 py-6 mt-12">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      © 2025 El Comilón. Todos los derechos reservados.
+    </div>
+  </footer>
+
+</body>
+</html>
